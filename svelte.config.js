@@ -19,7 +19,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths:{
-			base: dev ? '' : 'https://github.com/bulatok/bulatok.github.io',
+			base: dev ? '' : 'https://github.com/bulatok/bulatok.github.io.git',
 		}
 	}
 };
