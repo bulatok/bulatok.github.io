@@ -8,7 +8,10 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		paths:{
+			base: 'https://github.com/bulatok/bulatok.github.io',
+		}
 	}
 };
 
