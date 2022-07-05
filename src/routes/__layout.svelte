@@ -68,7 +68,7 @@
                 </li>
 
 				 <li class="header_item_1">
-					 <a href="./projects" class="first">
+					 <a href="/projects" class="first">
 						 <span class="header_counter_1">02. </span>Projects
 					 </a>
 				 </li>

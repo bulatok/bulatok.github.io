@@ -1,19 +1,19 @@
 {
-	"name": "myapp",
+	"name": "bulatok.github.io",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
-		"deploy": "gh-pages -d build",
+		"deploy": "npm run build && node ./gh-pages.js",
 		"predeploy": "npm run build",
 		"prepare": "svelte-kit sync",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.34",
 		"@sveltejs/kit": "next",
 		"gh-pages": "^4.0.0",
 		"svelte": "^3.44.0",
