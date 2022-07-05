@@ -73,7 +73,7 @@
 					 </a>
 				 </li>
 				 <li class="header_item_2">
-					 <a href="/articles" class="second">
+					 <a href="/homies" class="second">
 					   <span class="header_counter_2">03. </span>
 					   Articles
 					 </a>

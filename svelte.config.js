@@ -9,8 +9,11 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		serviceWorker: {
+			register: false,
+		},
 		paths: {
-			base: dev ? '' : '/bulatok.github.io',
+			// base: dev ? '' : '/bulatok.github.io',
 		},
 		prerender: {
 			default: true,
