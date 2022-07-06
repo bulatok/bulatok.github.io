@@ -20,11 +20,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Running elsint
-        run: npm run eslint
+      - name: Running lint
+        run: npm run lint
 
-      - name: Running prettier
-        run: npm run prettier
+      - name: Running formatting
+        run: npm run format
 
       - name: Build website
         run: npm run build

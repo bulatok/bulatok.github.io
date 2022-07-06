@@ -8,9 +8,9 @@
     "preview": "svelte-kit preview",
     "deploy": "npm run build && node ./gh-pages.js",
     "predeploy": "npm run build",
-    "prettier": "prettier --check --plugin-search-dir=. . ",
-    "eslint": "eslint ./.eslintrc.cjs",
     "prepare": "svelte-kit sync",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
+    "format": "prettier --write --plugin-search-dir=. .",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
   },
