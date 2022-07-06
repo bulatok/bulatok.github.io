@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Socials from "../components/socials.svelte";
-	import Currency from "../components/currency.svelte";
+	import Currency from "../components/currency.svelte";	
+	import Onreload from "../components/onreload.svelte";
 </script>
 
 <style>
@@ -55,6 +56,7 @@
 </style>
 
 <nav>
+	<Onreload/>
 	<Currency/>
 	<!-- new part -->
 	<div class="container_inner">
