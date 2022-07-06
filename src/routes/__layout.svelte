@@ -91,6 +91,7 @@
 			<Socials nameStart="Git" nameEnd="Hub" link="https://github.com/bulatok"/>
 			<Socials nameStart="Habr" nameEnd="Career" link="https://career.habr.com/bulatok"/>
 			<Socials nameStart="bulat2020205" nameEnd="@gmail.com" link="mailto:bulat2020205@gmail.com"/>
+			<Socials nameStart="Tele" nameEnd="gram" link="https://t.me/bulatok4"/>
 		</ul>
 	</div>
 </nav>
