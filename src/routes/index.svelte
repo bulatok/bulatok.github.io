@@ -10,13 +10,13 @@
   </div>
 
   <div class="about-me_profession_1">
-    <h2>Backend Developer</h2>
+    <h2>Senior HTML/CSS</h2>
   </div>
 
   <!-- !button! -->
   <Button>change background</Button>
   <MeInfo
-    descip="19 years old freshman from Innopolis university. Golang enjoyer."
+    descip="19 years old student from Innopolis university."
   />
 
   <MeInfo
