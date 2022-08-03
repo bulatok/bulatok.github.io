@@ -12,6 +12,7 @@
 		line-height: 1.1;
 		padding-left: 15px;
 		padding-top: 30px;
+		/* background: linear-gradient(#e66465, #9198e5); */
 		background-repeat: no-repeat;
 		background-size: 100%;
 	}

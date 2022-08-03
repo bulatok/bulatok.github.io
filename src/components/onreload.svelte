@@ -16,6 +16,6 @@
     	console.log(path);
 		document.body.style.backgroundImage = path;
 		document.body.style.backgroundRepeat = "no-repeat";
-		document.body.style.backgroundSize = "100%";
+		document.body.style.backgroundSize = "100% 600%";
     });
 </script>
