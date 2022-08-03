@@ -15,5 +15,7 @@
     	const path: string = `url('./images/background/${image}')`;
     	console.log(path);
 		document.body.style.backgroundImage = path;
+		document.body.style.backgroundRepeat = "no-repeat";
+		document.body.style.backgroundSize = "100%";
     });
 </script>

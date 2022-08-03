@@ -12,6 +12,8 @@
 		line-height: 1.1;
 		padding-left: 15px;
 		padding-top: 30px;
+		background-repeat: no-repeat;
+		background-size: 100%;
 	}
 	.header_header{
     	position: relative;
