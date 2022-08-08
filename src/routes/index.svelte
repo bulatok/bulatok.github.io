@@ -51,11 +51,26 @@
     margin-top: 6px;
     margin-bottom: 3rem;
   }
+
   .header_me h1 {
     margin-top: 60px;
     font-size: 2.5rem;
     margin-bottom: 0;
   }
+
+  @media (max-width: 370px){
+		h1{
+			font-size: 2.20rem !important;
+		}
+	}
+
+  @media (max-width: 370px){
+		h2{
+			font-size: 1.5rem !important;
+		}
+	}
+  
+
   @media screen and (max-width: 900px){
       .header_me h1 {
       margin-top: 40px;

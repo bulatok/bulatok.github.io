@@ -72,6 +72,12 @@
 		.header_header{
 			position: absolute;
 			left: 10%;
+			/* margin-bottom: 100%; */
+		}
+	}
+	@media (max-width: 370px){
+		a{
+			font-size: 0.8rem !important;
 		}
 	}
 
