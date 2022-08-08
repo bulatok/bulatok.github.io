@@ -77,7 +77,7 @@
 	}
 	@media (max-width: 370px){
 		a{
-			font-size: 0.65rem !important;
+			font-size: 0.72rem !important;
 		}
 	}
 
