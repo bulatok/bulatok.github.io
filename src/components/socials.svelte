@@ -1,7 +1,7 @@
 <script lang="ts">
-    export let nameStart;
-    export let nameEnd;
-    export let link;
+    export let nameStart: string;
+    export let nameEnd: string;
+    export let link: string;
 </script>
 
 <style>
@@ -18,7 +18,12 @@
     a{
 		color: #fff;
 		text-decoration: none;
+        transition: all .3s;
 	}
+    a:hover{
+        display: inline-block;
+		transform: scale(1.05);
+    }
 </style>
 
 <div>

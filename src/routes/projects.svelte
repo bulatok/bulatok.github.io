@@ -2,6 +2,7 @@
     import Project from "../components/project.svelte";
 </script>
 
+
 <Project
     Name="Ozon intern task"
     Link="https://github.com/bulatok/ozon-task"

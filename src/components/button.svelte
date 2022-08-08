@@ -26,7 +26,12 @@
         border-width: 2px;
         box-sizing: inherit;
         line-height: 1.1;
+		transition: all .3s;
     }
+	button:hover{
+		display: inline-block;
+		transform: scale(1.05);
+	}
 </style>
 
 <button on:click={changeBackground} >

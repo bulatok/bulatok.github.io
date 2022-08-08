@@ -1,4 +1,7 @@
 <script lang="ts">
+import { onMount } from "svelte";
+
+
     let rate: string = "wait..";
     function showCurrency(): void{
         const api_url: string = "https://api.coindesk.com/v1/bpi/currentprice.json"
@@ -8,7 +11,18 @@
                 rate = `BTC/USD ${data.bpi.USD.rate_float}`
             })
     }
+    function isMobile(): boolean{
+        let w: number = window.innerWidth;
+        let h: number = window.innerHeight;
+        console.log("w = ", w, " h = ", h);
+        if (w < 400 && h < 900){
+            return true
+        }
+        return false;
+    }
+    
     showCurrency()
+    
 </script>
 
 <style>

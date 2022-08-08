@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let descip;
+    export let descip: string;
 </script>
 
 <style>

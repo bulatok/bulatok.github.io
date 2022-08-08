@@ -3,6 +3,7 @@
   import MeInfo from "../components/meInfo.svelte";
 </script>
 
+
 <!-- new part -->
 <div class="about_me">
   <div class="header_me">
@@ -41,13 +42,25 @@
     padding-left: 15px;
     padding-top: 30px;
   }
+  .about-me_profession_1{
+    	margin-top: 15px;
+  }
+
   .about-me_profession_1 h2 {
     line-height: 0;
     margin-top: 6px;
     margin-bottom: 3rem;
   }
   .header_me h1 {
+    margin-top: 60px;
     font-size: 2.5rem;
     margin-bottom: 0;
   }
+  @media screen and (max-width: 900px){
+      .header_me h1 {
+      margin-top: 40px;
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+	}
 </style>

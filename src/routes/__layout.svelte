@@ -16,9 +16,13 @@
 		background-repeat: no-repeat;
 		background-size: 100%;
 	}
+
 	.header_header{
     	position: relative;
     	float: right;
+		width: 303px;
+		height: auto;
+		margin: 0 auto;
 	}
 	.header_header .header_list{
 		margin: 0;
@@ -29,11 +33,12 @@
 		margin-right: 10px;
 		padding: 3px; 
 	}
-	.header_header .header_list .first{
+	.header_header .header_list a{
 		font-size: small;
 		box-sizing: border-box;
 		text-decoration: none;
-		color: #fff
+		color: #fff;
+		transition: all .3s;
 	}
 	.header_header .header_list .header_counter_1{
 		color: #64ffda;
@@ -52,8 +57,22 @@
 	/* third part */
 	.my_list ul{
         bottom: 0;
-        position: fixed;
-    	padding-left: 0
+        position: absolute;
+    	padding-left: 0;
+		left: auto;
+	}
+	.header_header .header_list a:hover{
+		display: inline-block;
+		transform: scale(1.2);
+	}
+	@media screen and (max-width: 900px){
+		.first{
+			font-size: 100px;
+		}
+		.header_header{
+			position: absolute;
+			left: 10%;
+		}
 	}
 
 </style>
@@ -73,12 +92,12 @@
                 </li>
 
 				 <li class="header_item_1">
-					 <a href="/projects" class="first">
+					 <a href="/projects" class="second">
 						 <span class="header_counter_1">02. </span>Projects
 					 </a>
 				 </li>
 				 <li class="header_item_2">
-					 <a href="/homies" class="second">
+					 <a href="/homies" class="third">
 					   <span class="header_counter_2">03. </span>
 					   Articles
 					 </a>
