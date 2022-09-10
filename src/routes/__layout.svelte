@@ -1,18 +1,12 @@
 <script lang="ts">
-	import Socials from "../components/socials.svelte";
-	import Currency from "../components/currency.svelte";	
 	import Onreload from "../components/onreload.svelte";
 </script>
 
 <style>
 	:global(body){
-		/* background: #0a192f url("/public/images/background/2.png"); */
+		margin: 0;
 		color: #fff;
 		font-family:Ubuntu Mono,monospace;
-		line-height: 1.1;
-		padding-left: 15px;
-		padding-top: 30px;
-		/* background: linear-gradient(#e66465, #9198e5); */
 		background-repeat: no-repeat;
 		background-size: 100%;
 	}
@@ -55,12 +49,15 @@
 	}
 
 	/* third part */
-	.my_list ul{
+	/* .my_list ul{
         bottom: 0;
         position: absolute;
     	padding-left: 0;
 		left: auto;
-	}
+	} */
+	/* .my_list{
+		margin-bottom: 100px;
+	} */
 	.header_header .header_list a:hover{
 		display: inline-block;
 		transform: scale(1.2);
@@ -80,48 +77,51 @@
 			font-size: 0.72rem !important;
 		}
 	}
-
+	.header_item_1{
+		text-align: center;
+	}
+	.my_navbar{
+    padding: 0;
+    margin: 0;
+  }
+  .my_list{
+    text-align: center;
+  }
+  .navbar_layout{
+	background-color: rgba(0, 0, 0, 0.498);
+	/* background: transparent; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+    padding: 0;
+    margin: 0;
+	}
+	.navbar_layout a{
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px;
+		text-decoration: none;
+	}
 </style>
 
 <nav>
 	<Onreload/>
-	<Currency/>
-	<!-- new part -->
-	<div class="container_inner">
-        
-		<div class="header_header">
-			<ul class="header_list">
-                <li class="header_item_0">
-                    <a href="/" class="first">
-                        <span class="header_counter_1">01. </span>Home
-                    </a>
-                </li>
-
-				 <li class="header_item_1">
-					 <a href="/projects" class="second">
-						 <span class="header_counter_1">02. </span>Projects
-					 </a>
-				 </li>
-				 <li class="header_item_2">
-					 <a href="/homies" class="third">
-					   <span class="header_counter_2">03. </span>
-					   Articles
-					 </a>
-				 </li>
-			</ul>
-		</div>  
-	</div>
+	<!-- <Currency/> -->
 
 	<!-- new part -->
-	<div class="my_list">
-		<ul class="socials_list">
-			<Socials nameStart="Linked" nameEnd="in" link="https://www.linkedin.com/in/bulat-kutlugallyamov-86506921b/"/>
-			<Socials nameStart="Git" nameEnd="Hub" link="https://github.com/bulatok"/>
-			<Socials nameStart="Habr" nameEnd="Career" link="https://career.habr.com/bulatok"/>
-			<Socials nameStart="bulat2020205" nameEnd="@gmail.com" link="mailto:bulat2020205@gmail.com"/>
-			<Socials nameStart="Tele" nameEnd="gram" link="https://t.me/bulatok4"/>
+	<nav class="navbar_layout">
+		<ul class="my_navbar">
+        <a href="/">home</a>
+        <a href="/projects">projects</a>
+			  <a href="/homies">articles</a>    
 		</ul>
-	</div>
+	</nav>
 </nav>
 
 <div class = "conatainer">

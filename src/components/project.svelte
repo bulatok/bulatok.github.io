@@ -1,12 +1,13 @@
 <script lang="ts">
-    export let Name: string;
-    export let Link: string;
-    export let Info: string;
+    export let Name: String;
+    export let Link: String;
+    export let Info: String;
 </script>
 
 <style>
     .glop{
         margin-top: 54px;
+        text-align: center;
     }
     .glop a{
         color: #64ffda;;

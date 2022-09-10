@@ -26,7 +26,7 @@
     }
 </style>
 
-<div>
+<div class="content">
     <div>
         <li>
             <!-- svelte-ignore a11y-missing-attribute -->

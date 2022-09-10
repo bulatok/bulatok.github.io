@@ -1,47 +1,82 @@
 <script lang="ts">
-  import Button from "../components/button.svelte";
-  import MeInfo from "../components/meInfo.svelte";
+  import Socials from "../components/socials.svelte";
 </script>
-
 
 <!-- new part -->
 <div class="about_me">
-  <div class="header_me">
-    <h1 class="about-me_name_1">Bulat Kutlugallyamov.</h1>
+
+
+  <div class="me">
+    <div class="header_me">
+      <h1 class="about-me_name_1">Bulat Kutlugallyamov.</h1>
+    </div>
+  
+    <div class="about-me_profession_1">
+      <h2>Backend golang</h2>
+    </div>
   </div>
+  
 
-  <div class="about-me_profession_1">
-    <h2>Senior HTML/CSS</h2>
-  </div>
+	
+	<!-- new part -->
+	<div class="my_list">
+		<ul class="socials_list">
+			<Socials nameStart="Linked" nameEnd="in" link="https://www.linkedin.com/in/bulat-kutlugallyamov-86506921b/"/>
+			<Socials nameStart="Git" nameEnd="Hub" link="https://github.com/bulatok"/>
+			<Socials nameStart="Habr" nameEnd="Career" link="https://career.habr.com/bulatok"/>
+			<Socials nameStart="bulat2020205" nameEnd="@gmail.com" link="mailto:bulat2020205@gmail.com"/>
+			<Socials nameStart="Tele" nameEnd="gram" link="https://t.me/bulatok4"/>
+		</ul>
+	</div>
 
-  <!-- !button! -->
-  <Button>change background</Button>
-  <MeInfo
-    descip="19 years old student from Innopolis university."
-  />
-
-  <MeInfo
-    descip="Have experience in writing several chat bots for telegram and VK on Golang and python.
-		I used docker and docker-compose tools for deploying and managing them. 
-		Postgresql was choosen as a database storage.
-		"
-  />
-
-  <MeInfo
-    descip="Wrote api-wrapper that finds the best cryptocurrency exchange rates. 
-			The whole module was written on golang."
-  />
 </div>
 
 <style>
+  .my_navbar{
+    padding: 0;
+    margin: 0;
+  }
+  .my_list{
+    text-align: center;
+  }
+  .navbar_layout{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		position: relative;
+		overflow: hidden;
+    padding: 0;
+    margin: 0;
+		background-color: #333;
+	}
+	.navbar_layout a{
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px;
+		text-decoration: none;
+	}
+
+  .header_me{
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  .about-me_profession_1{
+    text-align: center;
+  }
+  
+  
+
   :global(body) {
-    /* background: #0a192f url("/public/images/background/2.png"); */
+    margin: 0;
     color: #fff;
     font-family: Ubuntu Mono, monospace;
-    line-height: 1.1;
-    padding-left: 15px;
-    padding-top: 30px;
   }
+  
   .about-me_profession_1{
     	margin-top: 15px;
   }
